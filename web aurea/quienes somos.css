@@ -1,0 +1,147 @@
+/* Animación de cambio de color */
+@keyframes changeColor {
+    0% {
+        background-color: #f6bd60; /* Calabaza claro */
+    }
+    50% {
+        background-color: #e69500; /* Calabaza oscuro */
+    }
+    100% {
+        background-color: #f6bd60; /* Calabaza claro */
+    }
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+/* Encabezado */
+.header-background {
+    background-image: url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    text-align: center;
+    color: #000;
+    animation: changeColor 10s infinite alternate;
+}
+
+.logo-container img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Pie de página */
+footer {
+    background-color: #e69500;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    background-color: #e69500;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #c82333;
+}
+
+footer button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenido principal */
+.about-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin: 10px 0;
+}
+
+.gallery-container {
+    max-width: 800px; /* Ajuste para hacer la galería más ancha */
+    margin: 0 auto; /* Centrar la galería horizontalmente */
+    text-align: center;
+}
+
+.gallery-info {
+    margin-bottom: 10px;
+}
+
+.gallery-info p {
+    margin: 0;
+}
+
+.gallery-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    transition: transform .3s, box-shadow .3s;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+}

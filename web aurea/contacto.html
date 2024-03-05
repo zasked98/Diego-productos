@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="quienes somos.css">
+    <style>
+        /* Estilos adicionales para mejorar la estética del formulario y otros elementos */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #map-container {
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-background">
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo">
+        </div>
+        <h1>Productos Diego Abasto XXI</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contactanos</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h3>Teléfonos de contacto</h3>
+        <p>+54 9 221 639-4073</p>
+
+        <h3>Mail de contacto</h3>
+        <p>aureaproductossas@gmail.com</p>
+
+        <div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.090874091322!2d-58.32603068476945!3d-34.67374878043422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333a8326c2907%3A0xc6e835a2d8725426!2sMercado%20Frutihorticola%20De%20Abasto%20XXI!5e0!3m2!1ses!2sar!4v1644969228960!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.instagram.com/abastoxxi/?igsh=MW43MGZkb2Nrc3Jrcw%3D%3D" target="_blank">
+            <img src="imagenes/red1.jpg" alt="Instagram">
+        </a>
+        <a href="https://wa.me/5492216394073" target="_blank">
+            <img src="imagenes\wsp1.jpg" alt="WhatsApp">
+        </a>
+        <a href="https://www.google.com/maps?ll=-34.673977,-58.323702&z=17&t=m&hl=es&gl=AR&mapclient=embed&cid=14332764787638948902" target="_blank">
+            <img src="imagenes/map.jpg" alt="Google Maps">
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

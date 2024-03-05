@@ -1,0 +1,165 @@
+@keyframes changeColor {
+    0% {
+        background-color: #f6bd60; /* Calabaza claro */
+    }
+    50% {
+        background-color: #e69500; /* Calabaza oscuro */
+    }
+    100% {
+        background-color: #f6bd60; /* Calabaza claro */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Cambio de fuente */
+    background: linear-gradient(to bottom right, #FFA500, #FF6347); /* Degradado de naranja */
+    color: #000; /* Cambio de color de texto a negro */
+    animation: changeColor 10s infinite alternate; /* Animación de cambio de color de fondo */
+    animation-name: moveBackground;
+    animation-duration: 30s; /* Duración de la animación */
+    animation-timing-function: linear; /* Función de temporización */
+    animation-iteration-count: infinite; /* Repetición infinita */
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0% 50%; /* Posición inicial */
+    }
+    to {
+        background-position: 100% 50%; /* Posición final */
+    }
+}
+
+.header-background {
+    background-image: url("imagenes/fondo.jpg"); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    text-align: center;
+    color: #000; /* Cambio de color de texto a negro */
+    animation: changeColor 10s infinite alternate; /* Animación de cambio de color */
+}
+
+.logo-container img {
+    max-width: 200px;
+    border-radius: 50%; /* Hace que la imagen del logo tenga bordes redondeados */
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 36px; /* Aumento del tamaño del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Cambio de color de texto a negro */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s; /* Agregar transición de color */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Cambio de color al pasar el mouse */
+}
+
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.product {
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px; /* Ajuste para redondear las esquinas */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    cursor: pointer; /* Cursor de puntero al pasar el mouse */
+}
+
+.product img:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+footer {
+    background-color: #333; /* Color calabaza */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 60px; /* Aumento del tamaño de la imagen */
+    height: auto; /* Para mantener la proporción */
+    margin-right: 10px; /* Espacio entre la imagen y el botón */
+    background-color: #333; /* Color de fondo calabaza */
+    border-radius: 50%; /* Hace que el fondo del icono tenga bordes redondeados */
+    transition: transform 0.3s; /* Agregar transición */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Hace que la imagen se agrande ligeramente al pasar el mouse */
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #dc3545; /* Color de fondo rojo */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s; /* Agregar transición de color de fondo */
+}
+
+footer button:hover {
+    background-color: #c82333; /* Cambio de color al pasar el mouse */
+}
+
+footer button a {
+    color: white;
+    text-decoration: none;
+}
+
+.product p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold; /* Letras en negrita */
+}
+
+
+footer a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
